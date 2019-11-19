@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>S2G Energy</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+        <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/estulli.png"></a>
+        </div>
+    </nav>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <button id="play-button" class="btn btn-primary">Reproducir</button>
+                <button id="reset-button" class="btn btn-primary">Reiniciar</button>
+                <div id="slider-div" style="margin-top: 20px">
+                    <label>Fecha inicial: <span id="year">1800</span></label>
+                    <label>Fecha final: <span id="year2">2014</span></label>
+                    <div id="date-slider"></div>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <select id="continent-select" class = "form-control">
+                    <option selected value="all">All</option>
+                    <option value="CDMX">CDMX</option>
+                    <option value="MTY">Monterrey</option>
+                    <option value="GDJ">Guadalajara</option>
+                    <option value="Primo">Primo</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div id="horizontal-bar-chart" style="margin-top: 30px"></div>
+        </div>
+    </div>
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
