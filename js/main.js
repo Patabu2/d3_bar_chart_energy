@@ -96,6 +96,7 @@ var title = g.append("text")
 // Read the data :v
 //--------------------------------------------------------------------------------
 //var loadDsv = d3.dsv(",", "utf-8")
+//var loadDsv = d3.dsv(",", "iso-8859-1");
 d3.csv("data/data.csv").then(cemerreData=>{
     //console.log(cemerreData);
     //cemerreData  = cemerreData.filter( d => d["Fecha"] === "31/07/2019");
@@ -247,10 +248,5 @@ function updateData(cleanData2){
     //Obtain the string for the date
     currentDateStr = cleanData2[0]["Fecha_str"];
     timeLabel.text(currentDateStr);
-    
-    //Change the X label depending on the selected KPI
-    /*
-    console.log(selectedKPI);
 
-*/
 };
