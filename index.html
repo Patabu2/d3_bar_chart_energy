@@ -24,25 +24,57 @@
     <!-- Bootstrap grid setup -->
     <div class="container">
         <div class = "row">
-            <div class = "col-md-6">
+            <!-- <div class = "col-md-6"> -->
+            <div class ="col-md-6">
                 <button id="play-button" class="btn btn-primary">Reproducir</button>
                 <button id="reset-button" class="btn btn-primary">Reiniciar</button>
                 <div id="slider-div" style="margin-top: 20px">
-                    <label>Fecha inicial: <span id="year">1800</span></label>
-                    <label>Fecha final: <span id="year2">2014</span></label>
+                    <label>Fecha inicial: <span id="year">31/07/2019</span></label>
+                    <label>Fecha final: <span id="year2">:v</span></label>
                     <div id="date-slider"></div>
                 </div>
             </div>
-            <div class = "col-md-6">
-                <select id="continent-select" class = "form-control">
-                    <option selected value="all">All</option>
+            <div class = "col-md-3">
+                <h4>Selección de región CMR</h4>
+                <select id="region-select" class = "form-control">
+                    <option selected value="all">Todas las unidades</option>
+                    <option value="AGS">AGS</option>
+                    <option value="CAM">CAM</option>
                     <option value="CDMX">CDMX</option>
-                    <option value="MTY">Monterrey</option>
-                    <option value="GDJ">Guadalajara</option>
-                    <option value="Primo">Primo</option>
+                    <option value="CHI">CHI</option>
+                    <option value="CP">CP</option>
+                    <option value="CUN">CUN</option>
+                    <option value="GDL">GDL</option>
+                    <option value="GTO">GTO</option>
+                    <option value="JAL">JAL</option>
+                    <option value="MIC">MIC</option>
+                    <option value="MTY">MTY</option>
+                    <option value="QRO">QRO</option>
+                    <option value="REY">REY</option>
+                    <option value="SAL">SAL</option>
+                    <option value="SLP">SLP</option>
+                    <option value="TAB">TAB</option>
+                    <option value="TAM">TAM</option>
+                    <option value="TEP">TEP</option>
+                    <option value="TIJ">TIJ</option>
+                    <option value="TLX">TLX</option>
+                    <option value="TOR">TOR</option>
+                    <option value="VER">VER</option>
+                    <option value="YUC">YUC</option>
+                </select>
+            </div>
+            <div class = "col-md-3">
+                <h4>Selección de KPI</h4>
+                <select id="kpi-select" class = "form-control">
+                    <option selected value="energy_main(kWh)">Energía</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Invitados">Invitados</option>
+                    <option value="intensidad_kWh_invitado">Intensidad Energética (kWh/invitado)</option>
+                    <option value="ticket_promedio_MXN_invitado">Ticket Promedio (MXN/invitado)</option>
                 </select>
             </div>
         </div>
+        
         <div class="row">
             <div id="horizontal-bar-chart" style="margin-top: 30px"></div>
         </div>
